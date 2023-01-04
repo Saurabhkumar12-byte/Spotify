@@ -3,10 +3,12 @@ import './style.css'
 // import { setupCounter } from './counter.js'
 
 document.addEventListener("DOMContentLoaded",()=>{
-  if (localStorage.getItem("accessToken")) {
-    window.location.href="Dashboard/dashboard.html";
+  if (localStorage.getItem("ACCESS_TOKEN")) {
+    window.location.href =
+    "http://localhost:3000/Dashboard/dashboard.html";
   } else {
-    window.location.href="Login/login.html";
+    window.location.href =
+        "http://localhost:3000/Login/login.html";
   }
 })
 
